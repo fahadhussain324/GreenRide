@@ -6,19 +6,21 @@
     <meta name="description" content="Welcome to GreenRide - We make city travel cleaner, greener, and smarter, one ride at a time.">
     <meta name="keywords" content="">
     <title id="welcome_header">GreenRide</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
   <nav>
   <div class="navbar">
   <!-- Navbar is seperated into left, middle and right -->
         <div class="left-section">
-           <img id="nav-logo" src="logo.png" alt="logo">
+          <a href="index.html"> 
+          <img id="nav-logo" src="images/logo.png" alt="logo"></a>
         </div>
         <div class="middle-section">
           <ul>
@@ -30,54 +32,67 @@
           </ul>
         </div>
         <div class="right-section">
-          <button class="get-started-btn">Get Started</button>
+          <a href="products.html">
+            <button class="get-started-btn">Get Started</button>
+          </a>
         </div>
 			</div>
   </nav>
-    <div class="main">
-        <h2 class="lims-title">GreenRide</h2>
-        <h4 class="first-description">Blood Sciences Laboratory Information Management System </h4>
-        <h5 class="second-description">The Integrated Pulse of Your Pathology Network</h5>
+    <div class="above-the-fold">
+      <div class="image-container">
+        <img srcset="
+          images/map-vector.jpg 100w
+          images/map-vector.jpg 200w
+          images/map-vector.jpg 400w
+          images/map-vector.jpg 800w
+          images/map-vector.jpg 1000w" src="images/map-vector.jpg"
+          sizes="(width <= 600px) 400px, 1000px"
+          alt="map of city vector">
+        <div class="overlay-text"> 
+          <h2 class="greenride-title">GreenRide</h2>
+          <h4 class="first-description">Electric Bike and Scooter Rentals</h4>
+          <h5 class="second-description">We Make City Travel Cleaner, Greener & Smarter One Ride At A Time. </h5>
+        </div>
+      </div>
     </div>
 
     <div class="features">
       <div class="item">
         <div class="icon">
-          <i class='bx  bx-chevron-right'></i>
+          <i class="bx bx-cycling"></i>
         </div>
         <div class="info">
-          <h4>Patient Focused</h4>
-          <p>Short description of feature 1, this should be about this length</p>
+          <h4>E-bike Rentals</h4>
+          <p>Pay-as-you-go or daily passes.</p>
         </div>
-        <i class='bx  bx-tachometer-alt'></i>
+        <i class='bx  bx-chevron-right'></i>
       </div>
       <div class="item">
         <div class="icon">
-          <i class='bx  bx-chevron-right'></i>
+          <i class="bx bx-timer"></i>
         </div>
         <div class="info">
-          <h4>Reliable</h4>
-          <p>Short description of feature 2, this should be about this length</p>
+          <h4>Electric Scooter Rentals</h4>
+          <p>Hourly electric scooter rentals with safety tutorials.</p>
         </div>
-        <i class='bx  bx-building-hospital'></i>
+          <i class='bx  bx-chevron-right'></i>
       </div>
       <div class="item">
         <div class="icon">
-          <i class='bx  bx-chevron-right'></i>
+          <i class='bx  bx-buildings'></i>
         </div>
         <div class="info">
-          <h4>Compliant</h4>
-          <p>Short description of feature 3, this should be about this length</p>
+          <h4>Corporate Mobility Plans</h4>
+          <p>Eco-commuting packages for businesses.</p>
         </div>
-        <i class='bx  bx-building-hospital'></i>
+        <i class='bx  bx-chevron-right'></i>
       </div>
     </div>
 
     <div class="seperator">
       <a href="#about-us">
-      <button class="about-us-seperator">About Us</button>
-    </a>
-    <button class="print-btn" id="printBtn">Print Page</button>
+        <button class="about-us-seperator">About Us</button>
+      </a>
     </div>
 
 
