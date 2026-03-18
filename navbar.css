@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #212529;
+    background-color: #212929;
 }
 
 *{
@@ -34,12 +34,12 @@ body {
 .left-section {
     align-items: left;
     flex: 1;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
-.left-section h1 {
-    color: rgb(228, 95, 95);
-    font-weight: 700;
+#nav-logo {
+    width: 130px;
+    height: 60px;
 }
 
 .middle-section{
