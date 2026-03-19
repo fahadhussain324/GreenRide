@@ -3,119 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the WhiteRose Network - Featuring the WhiteRose LIMS.">
+    <meta name="description" content="Welcome to GreenRide - We make city travel cleaner, greener, and smarter, one ride at a time.">
     <meta name="keywords" content="">
-    <title id="welcome_header">WhiteRose Technologies</title>
+    <title id="welcome_header">GreenRide</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
-			<div class="navbar">
+  <nav>
+  <div class="navbar">
+  <!-- Navbar is seperated into left, middle and right -->
         <div class="left-section">
-           <h1 class="header-name">WhiteRose</h1>
+          <a href="index.html"> 
+          <img id="nav-logo" src="images/logo.png" alt="logo"></a>
         </div>
         <div class="middle-section">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="current">About</a></li>
             <li><a href="products.html">Products</a></li>
+            <li><a href="#">News</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <div class="right-section">
-          <button class="get-started-btn">Get Started</button>
+          <a href="products.html">
+            <button class="get-started-btn">Get Started</button>
+          </a>
         </div>
 			</div>
+  </nav>
+  
+  <section>
+    <article>
+      <div class="about-company">
+        <h2>About GreenRide</h2>
+        <p>GreenRide was founded in 2018 to transform urban commuting through electric, low-emission transport options</p>
+        <p>The company began with a small fleet of 20 e-bikes and has since expanded to over 6,000 vehicles across major UK cities.</p>
+        <p>GreenRide partners with local councils, sustainability groups, and universities to promote safe and eco-friendly travel.</p>
+      </div>
 
-    <div class="main">
-        <h2 class="lims-title">WhiteRose&trade; LIMS</h2>
-        <h4 class="first-description">Blood Sciences Laboratory Information Management System </h4>
-        <h5 class="second-description">The Integrated Pulse of Your Pathology Network</h5>
+      <div class="staff-members">
+        <h2>Our Team</h2>
+        <p>GreenRide is powered by a passionate team of professionals dedicated to making a positive impact on the environment and communities we serve.</p>
+
+        <div class="staff-cards">
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h2 class="staff-card-name">Ella Morris</h2>
+                  <p class="title">CEO &amp; sustainability Lead</p>
+                  <p>Oversees company strategy, enviromental compliance, and partnerships with eco-transport organisations.</p>
+                  <p>ella.morris@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h2 class="staff-card-name">Rhys Patel</h2>
+                  <p class="title">Engineering and Fleet Manager</p>
+                  <p>Manages maintenance of electric bikes and scooters, ensuring performance and safety standards.</p>
+                  <p>rhys.patel@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <div class="container">
+                  <h2 class="staff-card-name">Sophie Grant</h2>
+                  <p class="title">Customer Experience Lead</p>
+                  <p>Handles user support, app feedback, and service quality improvements.</p>
+                  <p>sophie.grant@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
 
-    <div class="features">
-      <div class="item">
-        <div class="icon">
-          <i class='bx  bx-chevron-right'></i>
-        </div>
-        <div class="info">
-          <h4>Patient Focused</h4>
-          <p>Short description of feature 1, this should be about this length</p>
-        </div>
-        <i class='bx  bx-tachometer-alt'></i>
-      </div>
-      <div class="item">
-        <div class="icon">
-          <i class='bx  bx-chevron-right'></i>
-        </div>
-        <div class="info">
-          <h4>Reliable</h4>
-          <p>Short description of feature 2, this should be about this length</p>
-        </div>
-        <i class='bx  bx-building-hospital'></i>
-      </div>
-      <div class="item">
-        <div class="icon">
-          <i class='bx  bx-chevron-right'></i>
-        </div>
-        <div class="info">
-          <h4>Compliant</h4>
-          <p>Short description of feature 3, this should be about this length</p>
-        </div>
-        <i class='bx  bx-building-hospital'></i>
-      </div>
-    </div>
 
-    <h4 class="about-us-seperator">About Us</h4>
-    <div class="about-us">
-      <img src="images/WhiteRose Logo.jpg" alt="WhiteRose Logo">
-      <div class="info">
-        <h4>Why WhiteRose?</h4>
-        <p>Built by Biomedical Scientists in the core Blood Sciences disciplines,
-          WhiteRose LIMS aims to work for the laboratory staff, creating a core engine
-          integrating the laboratory to the rest of the hospital ecosystem.
-        </p>
-        <button class="speak-with-us-btn">Discover Our Development Process</button>
-      </div>
-    </div>
+    </article>
 
-    <div class="skills">
-      <div class="left">
-        <div class="info">
-          <h4>Core Development</h4>
-          <p>WhiteRose v1 is built on Java and Javascript, with MySQL database
-            fueling the backend. It has a custom built engine designed for reliability, scalability and
-            easy to integrate interface for seamless implementation and daily use.
-          </p>
-        </div>
-        <button class="tech-stack">View Tech Stack</button>
-      </div>
-      <div class="right">
-        <div class="item">
-          <i class='bx  bx-file-code'></i>
-        </div>
-        <div class="item">
-          <i class='bx  bx-scan-barcode'></i>
-        </div>
-        <div class="item">
-          <i class='bx  bx-git-branch'></i>
-        </div>
-        <div class="item">
-          <i class='bx  bx-medical-flask'></i>
-        </div>
-      </div>
-    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <footer>
-    <div class="start">
-      <h3>Ready to start?</h3>
-      <p>Get in touch to learn more about our laboratory solutions</p>
-      <button class="speak-with-us-btn">Start Here</button>
-    </div>
-
     <div class="links-collection">
       <div class="about">
         <h4>Helpful Links</h4>
@@ -125,16 +130,15 @@
         <a href="#">Contact</a>
       </div>
 
-      <div class="social">
-        <h4>Social Media</h4>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">YouTube</a>
-        <a href="#">WhiteRose Network</a>
+      <div class="plans">
+        <a href="#"><h4>Membership Plans</h4></a>
+        <a href="#">Basic Plan</a>
+        <a href="#">Plus Plan</a>
+        <a href="#">Unlimited Plan</a>
       </div>
 
       <div class="news">
-        <h4>Newsletter</h4>
+        <a href="news"><h4>Newsletter</h4></a>
         <p>Enter your email to get notified about new products and updates:</p>
 
         <form>
@@ -142,7 +146,17 @@
           <button class=""><i class='bx  bx-envelope'></i> </button>
         </form>
       </div>
+
+      <div class="company-info">
+        <h4>Contact Us</h4>
+        <p>GreenRide &#169; 2026</p>
+        <p>Address: 123 Green Street, Cityville, Country</p>
+        <p>Email: info@greenride.com</p>
+      </div>
     </div>
   </footer>
-</body>
+
+  <noscript><p>JavaScript is required to use this website.</p></noscript>
+  <script src="script.js"></script>
+</body>   
 </html>
