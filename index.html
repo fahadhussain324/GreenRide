@@ -12,22 +12,29 @@
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+
 </head>
 <body>
   <nav>
   <div class="navbar">
   <!-- Navbar is seperated into left, middle and right -->
         <div class="left-section">
-          <a href="index.html"> 
+          <a href="index.html">
           <img id="nav-logo" src="images/logo.png" alt="logo"></a>
         </div>
         <div class="middle-section">
           <ul>
             <li><a href="index.html" class="current">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="products.html">Products</a>
+              <ul>
+                <li><a href="basic">Basic</a></li>
+                <li><a href="basic">Plus</a></li>
+                <li><a href="basic">Unlimited</a></li>
+              </ul>
+            </li>
+            <li><a href="#news">News</a></li>
+
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -48,7 +55,7 @@
           images/map-vector.jpg 1000w" src="images/map-vector.jpg"
           sizes="(width <= 600px) 400px, 1000px"
           alt="map of city vector">
-        <div class="overlay-text"> 
+        <div class="overlay-text">
           <h2 class="greenride-title">GreenRide</h2>
           <h4 class="first-description">Electric Bike and Scooter Rentals</h4>
           <h5 class="second-description">We Make City Travel Cleaner, Greener & Smarter One Ride At A Time. </h5>
@@ -93,13 +100,14 @@
       <div class="about-us">
         <div class="info">
           <h4 id="about-us-h4">Why GreenRide?</h4>
-          <p>GreenRide is more than just a transportation service; it's a movement towards a cleaner, greener future. 
-            We are committed to reducing carbon emissions and traffic congestion in urban areas by providing convenient and 
+          <p>GreenRide is more than just a transportation service; it's a movement towards a cleaner, greener future.
+            We are committed to reducing carbon emissions and traffic congestion in urban areas by providing convenient and
             affordable electric bike and scooter rentals.
             </p>
             <p>
-            Our mission is to make sustainable transportation accessible to everyone, while also promoting healthier lifestyles and vibrant communities. 
-            With GreenRide, you can enjoy the freedom of the city without the environmental impact.
+            Our mission is to make sustainable transportation accessible to everyone, while also promoting healthier lifestyles and vibrant communities.</p>
+
+            <p>With GreenRide, you can enjoy the freedom of the city without the environmental impact!
           </p>
         </div>
         <img src="images/logo.png" alt="GreenRide Logo">
@@ -108,7 +116,7 @@
   <footer>
     <div class="start">
       <h3>Did You Know?</h3>
-      <p>GreenRide partners with local businesses to provide 
+      <p>GreenRide partners with local businesses to provide
         eco-friendly transportation options for their employees and customers!</p>
       <button class="speak-with-us-btn">Learn More</button>
     </div>
@@ -130,7 +138,7 @@
       </div>
 
       <div class="news">
-        <a href="news"><h4>Newsletter</h4></a>
+        <a href="news"><h4 class="newsletter">Newsletter</h4></a>
         <p>Enter your email to get notified about new products and updates:</p>
 
         <form>
@@ -140,15 +148,18 @@
       </div>
 
       <div class="company-info">
-        <h4>Contact Us</h4>
-        <p>GreenRide &#169; 2026</p>
+        <a href="#contact.html"><h4 class="contact-us">Contact Us</h4></a>
+        <p>GreenRide</p>
         <p>Address: 123 Green Street, Cityville, Country</p>
         <p>Email: info@greenride.com</p>
       </div>
+    </div>
+    <div class="copyright">
+      <p>GreenRide &#169; 2026. All Rights Reserved.</p>
     </div>
   </footer>
 
   <noscript><p>JavaScript is required to use this website.</p></noscript>
   <script src="script.js"></script>
-</body>   
+</body>
 </html>
