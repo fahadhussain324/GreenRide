@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
   <nav>
   <div class="navbar">
-  <!-- Navbar is seperated into left, middle and right -->
         <div class="left-section">
           <a href="index.html">
           <img id="nav-logo" src="images/logo.png" alt="logo"></a>
@@ -26,8 +24,24 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" class="current">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="#">News</a></li>
+
+            <li>
+              <a href="products.html">Products</a>
+              <ul>
+                <li><a href="#basic">Basic</a></li>
+                <li><a href="#plus">Plus</a></li>
+                <li><a href="#unlimited">Unlimited</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#news">News</a>
+              <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#blog">Promotions</a></li>
+              </ul>
+            </li>
+
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -36,7 +50,7 @@
             <button class="get-started-btn">Get Started</button>
           </a>
         </div>
-			</div>
+            </div>
   </nav>
 
   <section>
@@ -49,8 +63,8 @@
       </div>
 
       <div class="staff-members">
-        <h2>Our Team</h2>
-        <p>GreenRide is powered by a passionate team of professionals dedicated to making a positive impact on the environment and communities we serve.</p>
+        <h2 class="our-team">Our Team</h2>
+        <p id="team-descript">GreenRide is powered by a passionate team of professionals dedicated to making a positive impact on the environment and communities we serve.</p>
 
         <div class="staff-cards">
           <div class="row">
@@ -60,7 +74,7 @@
                   <h2 class="staff-card-name">Ella Morris</h2>
                   <p class="title">CEO &amp; sustainability Lead</p>
                   <p>Oversees company strategy, enviromental compliance, and partnerships with eco-transport organisations.</p>
-                  <p>ella.morris@example.com</p>
+                  <p>Email: ella.morris@example.com</p>
                   <p><button class="button">Contact</button></p>
                 </div>
               </div>
@@ -72,7 +86,7 @@
                   <h2 class="staff-card-name">Rhys Patel</h2>
                   <p class="title">Engineering and Fleet Manager</p>
                   <p>Manages maintenance of electric bikes and scooters, ensuring performance and safety standards.</p>
-                  <p>rhys.patel@example.com</p>
+                  <p>Email: rhys.patel@example.com</p>
                   <p><button class="button">Contact</button></p>
                 </div>
               </div>
@@ -84,7 +98,7 @@
                   <h2 class="staff-card-name">Sophie Grant</h2>
                   <p class="title">Customer Experience Lead</p>
                   <p>Handles user support, app feedback, and service quality improvements.</p>
-                  <p>sophie.grant@example.com</p>
+                  <p>Email: sophie.grant@example.com</p>
                   <p><button class="button">Contact</button></p>
                 </div>
               </div>
@@ -92,33 +106,18 @@
           </div>
       </div>
     </div>
+    
+    <div class="company-values">
+      <h2>Our Values</h2>
+      <p><span class="values-span">Sustainability:</span> We are committed to reducing our environmental impact and promoting green transportation.</p>
+      <p><span class="values-span">Community:</span> We strive to build strong relationships with our customers, partners, and local communities.</p>
+      <p><span class="values-span">Innovation:</span> We continuously seek new technologies and solutions to improve our services and user experience.</p>
+      <p><span class="values-span">Safety:</span> We prioritize the safety of our riders and the public through rigorous maintenance and education.</p>
+    </div>
 
-
+    <div class="get in touc"></div>
     </article>
-
-
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <footer>
     <div class="links-collection">
