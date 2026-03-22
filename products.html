@@ -28,21 +28,15 @@
             <li>
               <a href="products.html" class="current">Products</a>
               <ul>
-                <li><a href="#basic">Basic</a></li>
-                <li><a href="#plus">Plus</a></li>
-                <li><a href="#unlimited">Unlimited</a></li>
+                <li><a href="products.html?plan=basic-plan" class="plan-nav-link">Basic</a></li>
+                <li><a href="products.html?plan=plus-plan" class="plan-nav-link">Plus</a></li>
+                <li><a href="products.html?plan=unlimited-plan" class="plan-nav-link">Unlimited</a></li>
               </ul>
             </li>
 
-            <li>
-              <a href="#news">News</a>
-              <ul>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#blog">Promotions</a></li>
-              </ul>
-            </li>
+            <li><a href="news.html">News</a></li>
 
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="right-section">
@@ -53,70 +47,139 @@
             </div>
   </nav>
 
-  <section>
-    <article>
-      <div class="products">
-        <h2>About GreenRide</h2>
-        <p>GreenRide was founded in 2018 to transform urban commuting through electric, low-emission transport options</p>
-        <p>The company began with a small fleet of 20 e-bikes and has since expanded to over 6,000 vehicles across major UK cities.</p>
-        <p>GreenRide partners with local councils, sustainability groups, and universities to promote safe and eco-friendly travel.</p>
+  <section class="product-container">
+      <h2 class="header">Our Products</h2>
+      <p class="sub-header">Explore our range of eco-friendly transportation solutions designed for a sustainable future. 
+        Whether you're looking for a convenient way to get around the city or a greener alternative for your daily commute, GreenRide has you covered with our innovative products.</p> 
+      <div class="product-list">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Price</th>
+              <th>Details</th>
+              <th>Join below</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic Plan</td>
+              <td>$9.99/month</td>
+              <td>
+                <p>Includes 60 minutes of free rides per month, with discounted rates thereafter.</p>
+                <ul>
+                  <li><i class="bx bx-checkbox-checked"></i> Access to all standard vehicles</li>
+                </ul>
+              </td>
+              <td><button class="join-btn">Join Now</button></td>
+            </tr>
+            <tr>
+              <td>Plus Plan</td>
+              <td>£19.99/month</td>
+              <td>
+                <p>Includes 200 minutes of riding time, priority access at busy locations, and free helmet rentals!</p>
+                <ul>
+                  <li><i class="bx bx-checkbox-checked"></i> Access to all standard vehicles</li>
+                  <li><i class="bx bx-checkbox-checked"></i> Priority access at busy locations</li>
+                  <li><i class="bx bx-checkbox-checked"></i> Free helmet rentals</li>
+                </ul>
+              </td>
+              <td><button class="join-btn">Join Now</button></td>
+            </tr>
+            <tr>
+              <td>Unlimited Plan</td>
+              <td>$34.99/month</td>
+              <td>
+                <p>Includes unlimited rides under 45 minutes and free participation in eco-travel challenges!</p>
+                <ul>
+                  <li><i class="bx bx-checkbox-checked"></i> Unlimited access to all standard vehicles under 45 minutes</li>
+                  <li><i class="bx bx-checkbox-checked"></i> Priority access at busy locations</li>
+                  <li><i class="bx bx-checkbox-checked"></i> Free helmet rentals</li>
+                  <li><i class="bx bx-checkbox-checked"></i> Free participation in eco-travel challenges</li>
+                </ul>
+              </td>
+              <td><button class="join-btn">Join Now</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="staff-members">
-        <h2 class="our-team">Our Team</h2>
-        <p id="team-descript">GreenRide is powered by a passionate team of professionals dedicated to making a positive impact on the environment and communities we serve.</p>
-
-        <div class="staff-cards">
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <div class="container">
-                  <h2 class="staff-card-name">Ella Morris</h2>
-                  <p class="title">CEO &amp; sustainability Lead</p>
-                  <p>Oversees company strategy, enviromental compliance, and partnerships with eco-transport organisations.</p>
-                  <p>Email: ella.morris@example.com</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
+      <section class="product-details-section">
+        <h2 class="details-header">Understanding Our Plans</h2>
+        <div class="details-grid">
+          <div class="detail-card" id="basic-plan">
+            <div class="detail-icon">
+              <i class="bx bx-user"></i>
             </div>
-
-            <div class="column">
-              <div class="card">
-                <div class="container">
-                  <h2 class="staff-card-name">Rhys Patel</h2>
-                  <p class="title">Engineering and Fleet Manager</p>
-                  <p>Manages maintenance of electric bikes and scooters, ensuring performance and safety standards.</p>
-                  <p>Email: rhys.patel@example.com</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
+            <h3>Basic Plan</h3>
+            <p class="detail-subtitle">Perfect for Casual Riders</p>
+            <p class="detail-description">The Basic Plan is ideal for casual users who want to enjoy the benefits of eco-friendly transportation without a long-term commitment. With 60 minutes of free rides per month, you can explore your city while making a positive environmental impact. This plan is perfect for those taking an occasional trip or exploring the GreenRide experience.</p>
+            
+            <div class="detail-features">
+              <h4>What's Included:</h4>
+              <ul>
+                <li>60 minutes of free rides/month</li>
+                <li>Access to all standard vehicles</li>
+                <li>Discounted rates after free minutes</li>
+                <li>24/7 customer support</li>
+              </ul>
             </div>
-
-            <div class="column">
-              <div class="card">
-                <div class="container">
-                  <h2 class="staff-card-name">Sophie Grant</h2>
-                  <p class="title">Customer Experience Lead</p>
-                  <p>Handles user support, app feedback, and service quality improvements.</p>
-                  <p>Email: sophie.grant@example.com</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
+            
+            <div class="detail-highlight">
+              <strong>Best For:</strong> Occasional riders and explorers
             </div>
           </div>
-      </div>
-    </div>
-    
-    <div class="company-values">
-      <h2>Our Values</h2>
-      <p><span class="values-span">Sustainability:</span> We are committed to reducing our environmental impact and promoting green transportation.</p>
-      <p><span class="values-span">Community:</span> We strive to build strong relationships with our customers, partners, and local communities.</p>
-      <p><span class="values-span">Innovation:</span> We continuously seek new technologies and solutions to improve our services and user experience.</p>
-      <p><span class="values-span">Safety:</span> We prioritize the safety of our riders and the public through rigorous maintenance and education.</p>
-    </div>
 
-    <div class="get in touc"></div>
-    </article>
+          <div class="detail-card" id="plus-plan">
+            <div class="detail-icon">
+              <i class="bx bx-star"></i>
+            </div>
+            <h3>Plus Plan</h3>
+            <p class="detail-subtitle">For Regular Commuters</p>
+            <p class="detail-description">The Plus Plan is designed for regular commuters who need reliable daily transportation. With 200 minutes of riding time per month, priority access at busy locations, and complimentary helmet rentals, this plan ensures a smooth and safe commuting experience. Whether you're heading to work, school, or weekend adventures, the Plus Plan has you covered.</p>
+            
+            <div class="detail-features">
+              <h4>What's Included:</h4>
+              <ul>
+                <li>200 minutes of riding time/month</li>
+                <li>Access to all standard vehicles</li>
+                <li>Priority access at busy locations</li>
+                <li>Free helmet rentals</li>
+                <li>Priority customer support</li>
+              </ul>
+            </div>
+            
+            <div class="detail-highlight">
+              <strong>Best For:</strong> Daily commuters and frequent riders
+            </div>
+          </div>
+
+          <div class="detail-card" id="unlimited-plan">
+            <div class="detail-icon">
+              <i class="bx bx-crown"></i>
+            </div>
+            <h3>Unlimited Plan</h3>
+            <p class="detail-subtitle">Maximum Freedom & Benefits</p>
+            <p class="detail-description">Our premium Unlimited Plan offers maximum flexibility for power users and eco-conscious enthusiasts. Enjoy unlimited rides under 45 minutes, priority access at busy locations, free helmet rentals, and participation in exclusive eco-travel challenges. This plan is perfect for those who want to make sustainable transportation their primary mode of getting around.</p>
+            
+            <div class="detail-features">
+              <h4>What's Included:</h4>
+              <ul>
+                <li>Unlimited rides under 45 minutes</li>
+                <li>Access to all vehicles including premium options</li>
+                <li>Priority access at busy locations</li>
+                <li>Free helmet rentals</li>
+                <li>Exclusive eco-travel challenges</li>
+                <li>VIP customer support</li>
+              </ul>
+            </div>
+            
+            <div class="detail-highlight">
+              <strong>Best For:</strong> Power users and eco-conscious riders
+            </div>
+          </div>
+        </div>
+      </section>
   </section>
 
   <footer>
