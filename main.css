@@ -547,7 +547,7 @@ footer .copyright p{
 }
 
 .staff-members h2{
-    color:#FFB74D;
+    color:#333333;
     font-size: 28px;
     font-weight: 600;
     padding: 10px;
@@ -596,7 +596,7 @@ footer .copyright p{
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color:#81C784;
+  background-color:#F9FFF9;
   border: 1px solid transparent;
   border-radius: 25px;
 }
@@ -631,6 +631,8 @@ footer .copyright p{
   text-align: center;
   cursor: pointer;
   width: 100%;
+  font-size: 16px;
+  font-weight: 450;
 }
 
 .button:hover {
@@ -666,6 +668,21 @@ footer .copyright p{
     font-weight: 600;
     font-size: 20px;
 }
+
+/* products */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media queries */
