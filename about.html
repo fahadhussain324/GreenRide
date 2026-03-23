@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to GreenRide - We make city travel cleaner, greener, and smarter, one ride at a time.">
-    <meta name="keywords" content="">
-    <title id="welcome_header">GreenRide</title>
+    <meta name="description" content="About GreenRide - Learn about our mission to transform urban commuting with sustainable electric transportation solutions. Founded in 2018, we've expanded to 6,000+ vehicles across UK cities.">
+    <meta name="keywords" content="about GreenRide, company mission, sustainability, eco-friendly transport, urban mobility, electric vehicles, company history, team, corporate partnerships, environmental impact">
+    <meta name="author" content="GreenRide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GreenRide | Our Mission, Team & Sustainability Initiatives</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-  <nav>
+  <nav aria-label="Main Navigation">
   <div class="navbar">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
         <div class="left-section">
-          <a href="index.html">
-          <img id="nav-logo" src="images/logo.png" alt="logo"></a>
+          <a href="index.html" aria-label="GreenRide Home">
+          <img id="nav-logo" src="images/logo.png" alt="GreenRide Logo"></a>
         </div>
         <div class="middle-section">
-          <ul>
+          <ul role="menubar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="current">About</a></li>
+            <li><a href="about.html" class="current" aria-current="page">About</a></li>
 
             <li>
-              <a href="products.html">Products</a>
-              <ul>
-                <li><a href="products.html?plan=basic-plan" class="plan-nav-link">Basic</a></li>
-                <li><a href="products.html?plan=plus-plan" class="plan-nav-link">Plus</a></li>
-                <li><a href="products.html?plan=unlimited-plan" class="plan-nav-link">Unlimited</a></li>
+              <a href="products.html" aria-haspopup="true">Products</a>
+              <ul role="menu" aria-label="Products Submenu">
+                <li><a href="products.html?plan=basic-plan" class="plan-nav-link">Basic Plan</a></li>
+                <li><a href="products.html?plan=plus-plan" class="plan-nav-link">Plus Plan</a></li>
+                <li><a href="products.html?plan=unlimited-plan" class="plan-nav-link">Unlimited Plan</a></li>
               </ul>
             </li>
 
@@ -40,13 +44,14 @@
           </ul>
         </div>
         <div class="right-section">
-          <a href="products.html">
+          <a href="products.html" aria-label="Get Started with GreenRide">
             <button class="get-started-btn">Get Started</button>
           </a>
         </div>
             </div>
   </nav>
 
+  <main id="main-content">
   <section>
     <article>
       <div class="about-company">
@@ -109,6 +114,30 @@
       <p><span class="values-span">Safety:</span> We prioritize the safety of our riders and the public through rigorous maintenance and education.</p>
     </div>
 
+    <div class="satisfied-users">
+      <h2>Satisfied Users</h2>
+      <p class="satisfied-users-subtitle">Join thousands of satisfied customers who have made GreenRide part of their daily commute.</p>
+      <div class="users-grid">
+        <div class="user-card">
+          <div class="user-image-placeholder"></div>
+          <h3 class="user-name">Tom L.</h3>
+          <p class="user-review">"The app shows bikes near me instantly. Super convenient!"</p>
+        </div>
+
+        <div class="user-card">
+          <div class="user-image-placeholder"></div>
+          <h3 class="user-name">Melissa W.</h3>
+          <p class="user-review">"I've cut my taxi costs and reduced my CO2 footprint."</p>
+        </div>
+
+        <div class="user-card">
+          <div class="user-image-placeholder"></div>
+          <h3 class="user-name">Jake H.</h3>
+          <p class="user-review">"Customer support sorted my payment issues in minutes."</p>
+        </div>
+      </div>
+    </div>
+
     <div class="get in touc"></div>
     </article>
   </section>
@@ -117,26 +146,26 @@
     <div class="links-collection">
       <div class="about">
         <h4>Helpful Links</h4>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
       </div>
 
       <div class="plans">
-        <a href="#"><h4>Membership Plans</h4></a>
-        <a href="#">Basic Plan</a>
-        <a href="#">Plus Plan</a>
-        <a href="#">Unlimited Plan</a>
+        <a href="products.html"><h4>Membership Plans</h4></a>
+        <a href="products.html?plan=basic-plan">Basic Plan</a>
+        <a href="products.html?plan=plus-plan">Plus Plan</a>
+        <a href="products.html?plan=unlimited-plan">Unlimited Plan</a>
       </div>
 
       <div class="news">
-        <a href="news"><h4>Newsletter</h4></a>
+        <a href="news.html"><h4>Newsletter</h4></a>
         <p>Enter your email to get notified about new products and updates:</p>
 
-        <form>
+        <form class="newsletter-form">
           <input type="email" placeholder="Your email address">
-          <button class=""><i class='bx  bx-envelope'></i> </button>
+          <button type="submit"><i class='bx  bx-envelope'></i> </button>
         </form>
       </div>
 
@@ -153,6 +182,7 @@
   </footer>
 
   <noscript><p>JavaScript is required to use this website.</p></noscript>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

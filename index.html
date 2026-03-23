@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to GreenRide - We make city travel cleaner, greener, and smarter, one ride at a time.">
-    <meta name="keywords" content="">
-    <title id="welcome_header">GreenRide</title>
+    <meta name="description" content="GreenRide - Electric bike and scooter rentals for eco-friendly urban transportation. Pay-as-you-go or membership plans available. Reduce carbon emissions with our sustainable mobility solutions.">
+    <meta name="keywords" content="electric bike rentals, e-bike, scooter rentals, eco-friendly transportation, sustainable commute, urban mobility, green transportation, electric scooter, bike sharing, carbon neutral">
+    <meta name="author" content="GreenRide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Bike & Scooter Rentals | Eco-Friendly Urban Transportation | GreenRide</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navbar.css">
@@ -45,7 +47,8 @@
         </div>
 			</div>
   </nav>
-    <div class="above-the-fold">
+  <main>
+    <header class="above-the-fold">
       <div class="image-container">
         <img srcset="
           images/map-vector.jpg 100w
@@ -61,9 +64,9 @@
           <h5 class="second-description">We Make City Travel Cleaner, Greener & Smarter One Ride At A Time. </h5>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="features">
+    <section class="features">
       <div class="item">
         <div class="icon">
           <i class="bx bx-cycling"></i>
@@ -94,7 +97,7 @@
         </div>
         <i class='bx  bx-chevron-right'></i>
       </div>
-    </div>
+    </section>
 
     <article>
       <div class="about-us">
@@ -114,7 +117,7 @@
       </div>
     </article>
 
-     <section class="home-product-container">
+    <section class="home-product-container">
       <h2 class="home-header">Our Products</h2>
       <p class="home-sub-header">Explore our range of eco-friendly transportation solutions designed for a sustainable future. 
         Whether you're looking for a convenient way to get around the city or a greener alternative for your daily commute, GreenRide has you covered with our innovative products.</p> 
@@ -154,42 +157,44 @@
           <button class="plan-btn">Explore Plan</button>
         </div>
       </div>
+    </section>
+  </main>
   <footer>
     <div class="start">
       <h3>Did You Know?</h3>
       <p>GreenRide partners with local businesses to provide
         eco-friendly transportation options for their employees and customers!</p>
-      <button class="speak-with-us-btn">Learn More</button>
+      <button class="speak-with-us-btn" id="learn-more-btn">Learn More</button>
     </div>
 
     <div class="links-collection">
       <div class="about">
         <h4>Helpful Links</h4>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
       </div>
 
       <div class="plans">
-        <a href="#"><h4>Membership Plans</h4></a>
-        <a href="#">Basic Plan</a>
-        <a href="#">Plus Plan</a>
-        <a href="#">Unlimited Plan</a>
+        <a href="products.html"><h4>Membership Plans</h4></a>
+        <a href="products.html?plan=basic-plan">Basic Plan</a>
+        <a href="products.html?plan=plus-plan">Plus Plan</a>
+        <a href="products.html?plan=unlimited-plan">Unlimited Plan</a>
       </div>
 
       <div class="news">
-        <a href="news"><h4 class="newsletter">Newsletter</h4></a>
+        <a href="news.html"><h4>Newsletter</h4></a>
         <p>Enter your email to get notified about new products and updates:</p>
 
-        <form>
+        <form class="newsletter-form">
           <input type="email" placeholder="Your email address">
-          <button class=""><i class='bx  bx-envelope'></i> </button>
+          <button type="submit"><i class='bx  bx-envelope'></i> </button>
         </form>
       </div>
 
       <div class="company-info">
-        <a href="#contact.html"><h4 class="contact-us">Contact Us</h4></a>
+        <h4>Contact Us</h4>
         <p>GreenRide</p>
         <p>Address: 123 Green Street, Cityville, Country</p>
         <p>Email: info@greenride.com</p>
@@ -201,6 +206,7 @@
   </footer>
 
   <noscript><p>JavaScript is required to use this website.</p></noscript>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

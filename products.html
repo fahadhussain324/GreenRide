@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to GreenRide - We make city travel cleaner, greener, and smarter, one ride at a time.">
-    <meta name="keywords" content="">
-    <title id="welcome_header">GreenRide</title>
+    <meta name="description" content="GreenRide Membership Plans - Choose from Basic, Plus, and Unlimited plans for electric bike and scooter rentals. Affordable pricing with unlimited rides, priority access, and helmet rentals.">
+    <meta name="keywords" content="GreenRide plans, membership plans, pricing plans, basic plan, plus plan, unlimited plan, e-bike membership, scooter membership, rental pricing, affordable plans">
+    <meta name="author" content="GreenRide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans & Pricing | Electric Bike & Scooter Rentals | GreenRide</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navbar.css">
@@ -46,7 +48,7 @@
         </div>
             </div>
   </nav>
-
+  <main>
   <section class="product-container">
       <h2 class="header">Our Products</h2>
       <p class="sub-header">Explore our range of eco-friendly transportation solutions designed for a sustainable future. 
@@ -71,7 +73,7 @@
                   <li><i class="bx bx-checkbox-checked"></i> Access to all standard vehicles</li>
                 </ul>
               </td>
-              <td><button class="join-btn">Join Now</button></td>
+              <td><button type="button" class="join-btn">Join Now</button></td>
             </tr>
             <tr>
               <td>Plus Plan</td>
@@ -84,7 +86,7 @@
                   <li><i class="bx bx-checkbox-checked"></i> Free helmet rentals</li>
                 </ul>
               </td>
-              <td><button class="join-btn">Join Now</button></td>
+              <td><button type="button" class="join-btn">Join Now</button></td>
             </tr>
             <tr>
               <td>Unlimited Plan</td>
@@ -98,7 +100,7 @@
                   <li><i class="bx bx-checkbox-checked"></i> Free participation in eco-travel challenges</li>
                 </ul>
               </td>
-              <td><button class="join-btn">Join Now</button></td>
+              <td><button type="button" class="join-btn">Join Now</button></td>
             </tr>
           </tbody>
         </table>
@@ -186,26 +188,26 @@
     <div class="links-collection">
       <div class="about">
         <h4>Helpful Links</h4>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
       </div>
 
       <div class="plans">
-        <a href="#"><h4>Membership Plans</h4></a>
-        <a href="#">Basic Plan</a>
-        <a href="#">Plus Plan</a>
-        <a href="#">Unlimited Plan</a>
+        <a href="products.html"><h4>Membership Plans</h4></a>
+        <a href="products.html?plan=basic-plan">Basic Plan</a>
+        <a href="products.html?plan=plus-plan">Plus Plan</a>
+        <a href="products.html?plan=unlimited-plan">Unlimited Plan</a>
       </div>
 
       <div class="news">
-        <a href="news"><h4>Newsletter</h4></a>
+        <a href="news.html"><h4>Newsletter</h4></a>
         <p>Enter your email to get notified about new products and updates:</p>
 
-        <form>
+        <form class="newsletter-form">
           <input type="email" placeholder="Your email address">
-          <button class=""><i class='bx  bx-envelope'></i> </button>
+          <button type="submit"><i class='bx  bx-envelope'></i> </button>
         </form>
       </div>
 
@@ -222,6 +224,7 @@
   </footer>
 
   <noscript><p>JavaScript is required to use this website.</p></noscript>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

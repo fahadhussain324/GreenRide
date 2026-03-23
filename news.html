@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latest news and updates from GreenRide - Stay informed about our expansion, partnerships, and sustainability initiatives.">
-    <meta name="keywords" content="news, updates, greenride, eco-friendly, sustainability">
-    <title>News - GreenRide</title>
+    <meta name="description" content="GreenRide News - Latest updates on expansion, partnerships, sustainability initiatives, and eco-friendly transportation events. Stay informed about our journey to transform urban mobility.">
+    <meta name="keywords" content="GreenRide news, updates, events, promotions, expansion, partnerships, sustainability, eco-friendly initiatives, transportation news, GreenRide updates, promotional events">
+    <meta name="author" content="GreenRide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | Events & Promotions | GreenRide</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navbar.css">
@@ -43,11 +45,11 @@
       </div>
     </div>
   </nav>
-
-  <section class="news-header">
+  <main>
+  <header class="news-header">
     <h1>Latest News</h1>
     <p>Stay updated on GreenRide's latest developments, partnerships, and sustainability initiatives.</p>
-  </section>
+  </header>
 
   <!-- Events and Promotions Section -->
   <section class="events-promo-container">
@@ -191,7 +193,8 @@
   <section class="newsletter-section">
     <h2>Stay Updated</h2>
     <p>Subscribe to our newsletter to receive the latest news and updates from GreenRide.</p>
-    <form class="newsletter-form">
+    <form class="newsletter-form" id="email_form" name="email_form" action="join.html" method="get">
+      <div class="email">
       <input type="email" placeholder="Enter your email address" required>
       <button type="submit" class="newsletter-btn">Subscribe</button>
     </form>
@@ -208,15 +211,20 @@
       </div>
 
       <div class="plans">
-        <a href="#"><h4>Membership Plans</h4></a>
+        <a href="products.html"><h4>Membership Plans</h4></a>
         <a href="products.html?plan=basic-plan">Basic Plan</a>
         <a href="products.html?plan=plus-plan">Plus Plan</a>
         <a href="products.html?plan=unlimited-plan">Unlimited Plan</a>
       </div>
 
       <div class="news">
-        <a href="news.html"><h4>Latest News</h4></a>
-        <p>Stay informed about GreenRide updates and sustainability initiatives.</p>
+        <a href="news.html"><h4>Newsletter</h4></a>
+        <p>Enter your email to get notified about new products and updates:</p>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address">
+          <button type="submit"><i class='bx  bx-envelope'></i> </button>
+        </form>
       </div>
 
       <div class="company-info">
@@ -233,6 +241,7 @@
   </footer>
 
   <noscript><p>JavaScript is required to use this website.</p></noscript>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@
 
 body {
     background-color: #F9FFF9;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -21,6 +22,7 @@ body {
     justify-content: space-between;
     z-index: 1000;
     background-color: #4CAF50;
+    border-bottom: 4px solid #2d7a2d;
 }
 
 .left-section {
@@ -178,24 +180,33 @@ body {
 }
 
 .greenride-title {
-    font-size: 45px;
-    font-weight: 600px;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0)
+    font-size: 55px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
-.first-description{
-    margin-top: 15px;
-    font-size: 25px;
+.first-description {
+    margin-top: 20px;
+    font-size: 26px;
     font-weight: 500;
-    color:#333333;
+    color: #ffffff;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .second-description {
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 18px;
     font-weight: 400;
+    color: #ffffff;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .features {
@@ -659,6 +670,82 @@ footer .copyright p{
     font-size: 20px;
 }
 
+/* Satisfied Users Section */
+
+.satisfied-users {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    padding: 60px 50px;
+    background-color: #F0F8F0;
+    border-radius: 20px;
+}
+
+.satisfied-users h2 {
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.satisfied-users-subtitle {
+    color: #666666;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.user-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.user-card:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.15);
+    transform: translateY(-5px);
+}
+
+.user-image-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.user-name {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.user-review {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
 /* products */
 
 .header {
@@ -666,6 +753,7 @@ footer .copyright p{
     color: #333333;
     margin-bottom: 20px;
     font-size: 36px;
+    padding-top: 30px;
 }
 
 .sub-header{
@@ -1057,10 +1145,11 @@ footer .copyright p{
 }
 
 .contact-header p {
-    font-size: 20px;
+    font-size: 18px;
     color: #f0f0f0;
     max-width: 600px;
     margin: 0 auto;
+    font-weight: 500;
 }
 
 .contact-container {
@@ -1121,6 +1210,28 @@ footer .copyright p{
     box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
 }
 
+.form-group select {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+    flex: 1;
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+.form-group #plan-options {
+    background-color: #ffffff;
+    color: #333333;
+}
 .submit-btn {
     background-color: #4CAF50;
     color: #ffffff;
@@ -1137,6 +1248,24 @@ footer .copyright p{
     background-color: #45a049;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
+
+.clear-btn {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #bbb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(128, 128, 128, 0.3);
 }
 
 .contact-info-section {
@@ -1672,10 +1801,26 @@ footer .copyright p{
     width: 100%;
   }
 
+  .users-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .satisfied-users {
+    padding: 40px 30px;
+  }
+
   .column {
     width: 100%;
     display: block;
     font-size: 85%;
+  }
+}
+
+/* Mobile Navigation - 700px and below */
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-wrap: wrap;
   }
 }
 
@@ -1843,6 +1988,42 @@ footer .copyright p{
   .newsletter-btn {
     width: 100%;
     padding: 12px 24px;
+  }
+
+  .users-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .satisfied-users {
+    padding: 30px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .satisfied-users h2 {
+    font-size: 28px;
+  }
+
+  .satisfied-users-subtitle {
+    font-size: 16px;
+  }
+
+  .user-card {
+    padding: 25px;
+  }
+
+  .user-image-placeholder {
+    width: 80px;
+    height: 80px;
+  }
+
+  .user-name {
+    font-size: 18px;
+  }
+
+  .user-review {
+    font-size: 14px;
   }
 }
 

@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact GreenRide - Get in touch with our team for support, partnerships, or inquiries.">
-    <meta name="keywords" content="contact, support, greenride">
-    <title>Contact Us - GreenRide</title>
+    <meta name="description" content="Contact GreenRide - Reach out to our team for support, partnership inquiries, or membership questions. We're committed to providing excellent customer service for sustainable urban transportation.">
+    <meta name="keywords" content="contact GreenRide, customer support, inquiries, partnerships, membership help, email support, contact form, customer service, GreenRide contact">
+    <meta name="author" content="GreenRide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Customer Support & Partnerships | GreenRide</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="navbar.css">
@@ -43,17 +45,17 @@
       </div>
     </div>
   </nav>
-
-  <section class="contact-header">
+  <main>
+  <header class="contact-header">
     <h1>Get In Touch</h1>
     <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-  </section>
+  </header>
+      <!-- Contact Form -->
 
   <section class="contact-container">
     <div class="contact-content">
-      <!-- Contact Form -->
       <div class="contact-form-section">
-        <h2>Send us a Message</h2>
+        <h2>Send us a Message or Join our Membership Plans!</h2>
         <form class="contact-form" method="get">
           <div class="form-group">
             <label for="name">Full Name</label>
@@ -70,11 +72,24 @@
             <input type="text" id="subject" name="subject" required>
           </div>
 
+           <div class="form-group">
+            <label for="plan">Plan</label>
+            <select id="plan" name="plan" required>
+              <optgroup label="Select a plan" id="plan-options">
+                <option value="basic">Basic Plan</option>
+                <option value="plus">Plus Plan</option>
+                <option value="unlimited">Unlimited Plan</option>
+                <option value="none">None of the above</option>
+              </optgroup>
+            </select>
+          </div>
+
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="e.g. I would like to purchase the Basic Plan."></textarea>
           </div>
           <button type="submit" class="submit-btn">Send Message</button>
+          <button type="reset" class="clear-btn">Clear Form</button>
         </form>
       </div>
 
@@ -116,7 +131,8 @@
         </div>
       </div>
     </div>
-
+  </section>
+  </main>
   <footer>
     <div class="links-collection">
       <div class="about">
@@ -138,9 +154,9 @@
         <a href="news"><h4>Newsletter</h4></a>
         <p>Enter your email to get notified about new products and updates:</p>
 
-        <form>
+        <form class="newsletter-form">
           <input type="email" placeholder="Your email address">
-          <button class=""><i class='bx bx-envelope'></i></button>
+          <button type="submit"><i class='bx  bx-envelope'></i> </button>
         </form>
       </div>
 
@@ -158,6 +174,7 @@
   </footer>
 
   <noscript><p>JavaScript is required to use this website.</p></noscript>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

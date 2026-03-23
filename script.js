@@ -1,9 +1,42 @@
 "use strict";
+
+  // Handle Join Now"buttons on products page and might be unncessary, check at the end
+  var joinButtons = document.querySelectorAll(".join-btn");
+  console.log("Found " + joinButtons.length + " join buttons");
+  
+  for (var i = 0; i < joinButtons.length; i++) {
+    joinButtons[i].onclick = function() {
+      console.log("Join button clicked!");
+      // Get the plan name from the first cell of the table row
+      var row = this.closest("tr");
+      console.log("Row:", row);
+      
+      var planCell = row.querySelector("td:first-child");
+      console.log("Plan cell:", planCell);
+      
+      var planName = planCell.textContent.trim();
+      console.log("Plan name:", planName);
+
+      // Convert plan name to valuee (e.g., "Basic Plan" -> "basic")
+      var planValue = planName.toLowerCase().split(" ")[0];
+      console.log("Plan value:", planValue);
+
+      // Create the auto-filled message
+      var message = "I want to register onto the " + planName + "!";
+      console.log("Message:", message);
+
+      // Redirect to contact page with plan and message parameters
+      var url = "contact.html?plan=" + planValue + "&message=" + encodeURIComponent(message);
+      console.log("Redirecting to:", url);
+      window.location.href = url;
+    };
+  }
+
   // Handle plan buttons on index page
   var planButtons = document.querySelectorAll(".plan-btn");
   for (var i = 0; i < planButtons.length; i++) {
     planButtons[i].onclick = function() {
-      // Get the plan name from the card heading
+      // Get the plan nme from the card heading
       var card = this.parentElement;
       var heading = card.querySelector("h3");
       var planName = heading.textContent;
@@ -17,8 +50,43 @@
     };
   }
 
+  var learnMoreButtons = document.querySelectorAll(".learn-more-btn");
+  var learnMoreBtn = document.getElementById("learn-more-btn");
+  if (learnMoreBtn) {
+    learnMoreBtn.onclick = function() {
+      window.location.href = "products.html";
+    };
+  }
+
+  // Auto-fill contact form if coming from products page
+  function autoFillContactForm() {
+    // Get URL parameters
+    var urlParams = new URLSearchParams(window.location.search);
+    var plan = urlParams.get("plan");
+    var message = urlParams.get("message");
+
+    if (plan) {
+      var planSelect = document.getElementById("plan");
+      if (planSelect) {
+        planSelect.value = plan;
+      }
+    }
+
+    if (message) {
+      var messageField = document.getElementById("message");
+      if (messageField) {
+        messageField.value = message;
+      }
+    }
+  }
+
+  // Call auto-fill on page load if on contact page
+  if (document.querySelector(".contact-form")) {
+    autoFillContactForm();
+  }
+
   // Handle contact form submission
-  let contactForm = document.querySelector(".contact-form").value == "";
+  let contactForm = document.querySelector(".contact-form");
   if (contactForm) {
     contactForm.onsubmit = function(event) {
       event.preventDefault();
@@ -40,24 +108,29 @@
   }
 
   // Handle the newsletter form submission
-  let newsletterForm = document.querySelector(".newsletter-form");
-  if (newsletterForm) {
-    newsletterForm.onsubmit = function(event) {
-      event.preventDefault();
+  function newsletterJoin() {
+    let newsletterForms = document.querySelectorAll(".newsletter-form");
+    if (newsletterForms.length > 0) {
+      newsletterForms.forEach(function(form) {
+        form.onsubmit = function(event) {
+          event.preventDefault();
 
-      // Get the email value
-      let emailInput = newsletterForm.querySelector("input[type='email']");
-      let email = emailInput.value;
+          // Get the email value
+          let emailInput = form.querySelector("input[type='email']");
+          let email = emailInput.value;
 
-      // Validate the email input
-      if (email) {
-        alert("Thank you for subscribing to the newsletter! Check your email for confirmation.");
-        newsletterForm.reset();
-      } else {
-        alert("Please enter a valid email address.");
-      }
-    };
+          // Validate the email input
+          if (email) {
+            alert("Thank you for subscribing to the newsletter! Check your email for confirmation.");
+            form.reset();
+          } else {
+            alert("Please enter a valid email address.");
+          }
+        };
+      });
+    }
   }
+
 
   // This section handles navigating to specific plans when clicked from navbar
 
@@ -102,3 +175,6 @@
       }
     }, 500);
   }
+
+  // Initialize newsletter form validation on all pages
+  newsletterJoin();
