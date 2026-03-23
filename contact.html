@@ -45,94 +45,163 @@
       </div>
     </div>
   </nav>
+
   <main>
-  <header class="contact-header">
-    <h1>Get In Touch</h1>
-    <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-  </header>
-      <!-- Contact Form -->
+    <header class="contact-header">
+      <h1>Get In Touch</h1>
+      <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    </header>
 
-  <section class="contact-container">
-    <div class="contact-content">
-      <div class="contact-form-section">
-        <h2>Send us a Message or Join our Membership Plans!</h2>
-        <form class="contact-form" method="get">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
+    <section class="contact-container">
+      <div class="contact-content">
+
+        <div class="contact-form-section">
+          <h2>Send us a Message or Join our Membership Plans!</h2>
+          <form class="contact-form" method="get">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="plan">Plan</label>
+              <select id="plan" name="plan" required>
+                <optgroup label="Select a plan" id="plan-options">
+                  <option value="basic">Basic Plan</option>
+                  <option value="plus">Plus Plan</option>
+                  <option value="unlimited">Unlimited Plan</option>
+                  <option value="none">None of the above</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="e.g. I would like to purchase the Basic Plan."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <button type="reset" class="clear-btn">Clear Form</button>
+          </form>
+        </div>
+
+        <div class="contact-info-section">
+          <h2>Contact Information</h2>
+
+          <div class="contact-info-box">
+            <div class="info-icon">
+              <i class="bx bxs-location-plus"></i>
+            </div>
+            <div class="info-content">
+              <h3>Address</h3>
+              <p>123 Green Street</p>
+              <p>Cityville, Country</p>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+          <div class="contact-info-box">
+            <div class="info-icon">
+              <i class="bx bxs-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h3>Email</h3>
+              <p><a href="mailto:info@greenride.com">info@greenride.com</a></p>
+              <p><a href="mailto:support@greenride.com">support@greenride.com</a></p>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required>
+          <div class="contact-info-box">
+            <div class="info-icon">
+              <i class="bx bxs-phone-call"></i>
+            </div>
+            <div class="info-content">
+              <h3>Phone</h3>
+              <p><a href="tel:+441234567890">+44 (0) 123 456 7890</a></p>
+              <p>Available Mon-Fri, 9am-5pm GMT</p>
+            </div>
           </div>
+        </div>
 
-           <div class="form-group">
-            <label for="plan">Plan</label>
-            <select id="plan" name="plan" required>
-              <optgroup label="Select a plan" id="plan-options">
-                <option value="basic">Basic Plan</option>
-                <option value="plus">Plus Plan</option>
-                <option value="unlimited">Unlimited Plan</option>
-                <option value="none">None of the above</option>
-              </optgroup>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="e.g. I would like to purchase the Basic Plan."></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-          <button type="reset" class="clear-btn">Clear Form</button>
-        </form>
       </div>
+    </section>
 
-      <!-- Contact Information -->
-      <div class="contact-info-section">
-        <h2>Contact Information</h2>
+    <section class="register-section">
+      <h2 class="register-section-header">User Registration</h2>
 
-        <div class="contact-info-box">
-          <div class="info-icon">
-            <i class="bx bxs-location-plus"></i>
-          </div>
-          <div class="info-content">
-            <h3>Address</h3>
-            <p>123 Green Street</p>
-            <p>Cityville, Country</p>
+      <form action="confirm.html" method="get" class="register-form">
+
+        <div class="reg-form-group">
+          <label for="full_name">Full Name: <span class="required">*</span></label>
+          <input type="text" name="full_name" id="full_name">
+        </div>
+
+        <div class="reg-form-group">
+          <label for="email_address">E-Mail: <span class="required">*</span></label>
+          <input type="text" name="email_address" id="email_address">
+        </div>
+
+        <div class="reg-form-group">
+          <label for="phone">Mobile Phone: <span class="required">*</span></label>
+          <input type="text" name="phone" id="phone">
+        </div>
+
+        <div class="reg-form-group">
+          <label for="city">City: <span class="required">*</span></label>
+          <select name="city" id="city">
+            <option value="">Select a city</option>
+            <option>London</option>
+            <option>Birmingham</option>
+            <option>Manchester</option>
+            <option>Glasgow</option>
+            <option>Leeds</option>
+            <option>Liverpool</option>
+            <option>Newcastle</option>
+            <option>Sheffield</option>
+            <option>Bristol</option>
+            <option>Edinburgh</option>
+          </select>
+        </div>
+
+        <div class="reg-form-group">
+          <label>Contact me by:</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="contact" id="text" value="text" checked> Text</label>
+            <label class="radio-label"><input type="radio" name="contact" id="email" value="email"> Email</label>
+            <label class="radio-label"><input type="radio" name="contact" id="mobile_phone" value="mobile phone"> Mobile phone</label>
+            <label class="radio-label"><input type="radio" name="contact" id="no_contact" value="no contact"> Don't contact me</label>
           </div>
         </div>
 
-        <div class="contact-info-box">
-          <div class="info-icon">
-            <i class="bx bxs-envelope"></i>
-          </div>
-          <div class="info-content">
-            <h3>Email</h3>
-            <p><a href="mailto:info@greenride.com">info@greenride.com</a></p>
-            <p><a href="mailto:support@greenride.com">support@greenride.com</a></p>
-          </div>
+        <div class="reg-form-group">
+          <label>Terms of Service:
+            <input type="checkbox" name="terms" id="terms" value="yes"> I accept <span class="required">*</span>
+          </label>
         </div>
 
-        <div class="contact-info-box">
-          <div class="info-icon">
-            <i class="bx bxs-phone-call"></i>
-          </div>
-          <div class="info-content">
-            <h3>Phone</h3>
-            <p><a href="tel:+441234567890">+44 (0) 123 456 7890</a></p>
-            <p>Available Mon-Fri, 9am-5pm GMT</p>
-          </div>
+        <div class="reg-form-group">
+          <label for="comments">Comments: <span class="required">*</span></label>
+          <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
         </div>
-      </div>
-    </div>
-  </section>
+
+        <div class="reg-btn-group">
+          <input type="button" id="register" value="Register" class="reg-submit-btn">
+          <input type="button" id="reset_form" value="Reset" class="reg-reset-btn">
+        </div>
+
+      </form>
+    </section>
+
   </main>
+
   <footer>
     <div class="links-collection">
       <div class="about">
@@ -151,12 +220,11 @@
       </div>
 
       <div class="news">
-        <a href="news"><h4>Newsletter</h4></a>
+        <a href="news.html"><h4>Newsletter</h4></a>
         <p>Enter your email to get notified about new products and updates:</p>
-
         <form class="newsletter-form">
           <input type="email" placeholder="Your email address">
-          <button type="submit"><i class='bx  bx-envelope'></i> </button>
+          <button type="submit"><i class='bx bx-envelope'></i></button>
         </form>
       </div>
 
